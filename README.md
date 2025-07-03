@@ -1,12 +1,14 @@
-# My-Practice
-printf("Hello World!");
-<br>
-printf("This is my daily practice repo.");
-<br>
-printf("I've learned up-to the topic "Dynamic Memory Allocation".);
-<br>
-printf("What should i go for next??");
-<br>
-printf("1.DSA with C\n 2. Learning C++);
-<br>
-scanf("%d", &choice);
+# My Daily Practice Repo
+
+Hi there! I'm Meet and this is my daily C programming practice repo.  
+Here's a quick update on my progress so far:
+
+### Completed Topics:
+- Basics of C
+- Loops & Conditions
+- Functions
+- Pointers
+- Dynamic Memory Allocation
+
+### What’s Next?
+Help me decide what I should do next:

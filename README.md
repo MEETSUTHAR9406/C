@@ -10,5 +10,5 @@ Here's a quick update on my progress so far:
 - Pointers
 - Dynamic Memory Allocation
 
-### What’s Next?
-Help me decide what I should do next:
+### Suggestions??
+Email here - meet22240@gmail.com

@@ -6,8 +6,10 @@ Here's a quick update on my progress so far:
 ### Completed Topics:
 - Basics of C
 - Loops & Conditions
+- Structures
+- Unions
 - Functions
-- Pointers
+- Pointers (Void, NULL, Dangling, Wild)
 - Dynamic Memory Allocation
 
 ### Suggestions??

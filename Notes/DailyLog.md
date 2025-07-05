@@ -43,3 +43,4 @@ int a = 10;
 int *ptr = (int *) malloc(sizeof(int));
 free(ptr);
 printf("%d", *ptr); // This is Dangling Pointer
+ptr = NULL;

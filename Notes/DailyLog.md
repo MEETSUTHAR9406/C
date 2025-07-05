@@ -34,8 +34,13 @@ if(ptr != NULL)
 else
   printf("This pointer is NULL.");
 
+#Day - 2        -  Learned about Dangling Pointer & Wild Pointer.   
+(5/7/2025)
+
+==========================================================================================
+
 ## Dangling Pointer: It is like freeing the Pointer and then trying to access it.
-In we try to access it we might get Garbage Value.
+If we try to access it we might get Garbage Value.
 
 ### Example:
 
@@ -43,4 +48,13 @@ int a = 10;
 int *ptr = (int *) malloc(sizeof(int));
 free(ptr);
 printf("%d", *ptr); // This is Dangling Pointer
-ptr = NULL;
+ptr = NULL; // This becomes NULL Pointer now
+
+## Wild Pointer : It is like not assigning value to the pointer but then trying to dereference it.
+
+### Example:
+
+int a = 24;
+int *ptr;
+
+printf("%d", *ptr); // This is a Wild Pointer.

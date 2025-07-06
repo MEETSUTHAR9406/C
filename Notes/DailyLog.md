@@ -1,27 +1,28 @@
-# DailyLog is about my Learning throughout the day.
+# DailyLog is about my Learning throughout the day.<br><br>
 
-#Day - 1        -  Learned about Void Pointer and NULL pointer.
-(04/07/2025)
+#Day - 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Void Pointer and NULL pointer.<br>
+(04/07/2025)<br><br>
 
-==========================================================================================
+==========================================================================================<br><br>
 
-## Void Pointer: A generic pointer
-It is a Pointer that can hold any data type address, but we need to exclusively define it.
+## Void Pointer: A generic pointer<br>
+It is a Pointer that can hold any data type address, but we need to exclusively define it.<br><br>
 
-### Example:
+### Example:<br><br>
 
-int x = 10;
+<pre><code>int x = 10;
 void *ptr = &x;
 
-printf("%d", *(int *)ptr); --> // 10
-printf("%d", *ptr); --> // Can't do like this.
+printf("%d", *(int *)ptr); // 10
+printf("%d", *ptr); // Can't do like this.
+</code></pre>
 
-## NULL Pointer: It is like defining NULL to pointer then assigning values whenever need it.
-// If we don't declare NULL then it might print Garbage Value.
+## NULL Pointer: It is like defining NULL to pointer then assigning values whenever need it.<br>
+// If we don't declare NULL then it might print Garbage Value.<br><br>
 
-### Example:
+### Example:<br><br>
 
-int *ptr = NULL;
+<pre><code>int *ptr = NULL;
 int choice = 1;
 
 if(choice) {
@@ -30,78 +31,90 @@ if(choice) {
 }
 
 if(ptr != NULL) 
-  printf("%d", *ptr); --> // 42
+  printf("%d", *ptr); // 42
 else
   printf("This pointer is NULL.");
+</code></pre>
 
-#Day - 2        -  Learned about Dangling Pointer & Wild Pointer.   
-(05/07/2025)
+<br>
 
-==========================================================================================
+#Day - 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Dangling Pointer & Wild Pointer.   <br>
+(05/07/2025)<br><br>
 
-## Dangling Pointer: It is like freeing the Pointer and then trying to access it.
-If we try to access it we might get Garbage Value.
+==========================================================================================<br><br>
 
-### Example:
+## Dangling Pointer: It is like freeing the Pointer and then trying to access it.<br>
+If we try to access it we might get Garbage Value.<br><br>
 
-int a = 10;
+### Example:<br><br>
+
+<pre><code>int a = 10;
 int *ptr = (int *) malloc(sizeof(int));
 free(ptr);
 printf("%d", *ptr); // This is Dangling Pointer
 ptr = NULL; // This becomes NULL Pointer now
+</code></pre>
 
-## Wild Pointer : It is like not assigning value to the pointer but then trying to dereference it.
+## Wild Pointer : It is like not assigning value to the pointer but then trying to dereference it.<br><br>
 
-### Example:
+### Example:<br><br>
 
-int a = 24;
+<pre><code>int a = 24;
 int *ptr;
 
 printf("%d", *ptr); // This is a Wild Pointer.
+</code></pre>
 
-#Day - 3        -  Did Matrix Multiplication.
-(06/07/2025)
+<br>
 
-==========================================================================================
+#Day - 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
+(06/07/2025)<br><br>
 
+==========================================================================================<br><br>
 
-## Matrix Multiplication  
-- Tried doing Matrix Multiplication of 2D matrix and got succeeded.  
-- Used functions and user inputs to get the size of the Matrix.
+## Matrix Multiplication  <br>
+- Tried doing Matrix Multiplication of 2D matrix and got succeeded.  <br>
+- Used functions and user inputs to get the size of the Matrix.<br><br>
 
-## Preprocessor Directives  
-Learned about:  
-`#include`, `#define`, `#undef`, `#ifdef`, `#ifndef`, `#if`, `#else`, `#elif`, `#endif`
+## Preprocessor Directives  <br>
+Learned about:  <br>
+<code>#include</code>, <code>#define</code>, <code>#undef</code>, <code>#ifdef</code>, <code>#ifndef</code>, <code>#if</code>, <code>#else</code>, <code>#elif</code>, <code>#endif</code><br><br>
 
-#include 
- - To include another file.  
-#include <stdio.h>
+<b>#include</b> <br>
+- To include another file.  <br>
+<pre><code>#include &lt;stdio.h&gt;
 #include "myfile.h"
+</code></pre>
 
-#define
-- To define a constant or macro.
-#define PI 3.14
+<b>#define</b><br>
+- To define a constant or macro.<br>
+<pre><code>#define PI 3.14
+</code></pre>
 
-#undef
-- To undefine a macro which was defined earlier.
-#undef PI
+<b>#undef</b><br>
+- To undefine a macro which was defined earlier.<br>
+<pre><code>#undef PI
+</code></pre>
 
-#ifdef
-- To check if macro is actually defined.
-#define DEBUG
+<b>#ifdef</b><br>
+- To check if macro is actually defined.<br>
+<pre><code>#define DEBUG
+
 #ifdef DEBUG
   printf("It is defined.");
 #endif
+</code></pre>
 
-#ifndef
-- To check if macro is not defined. If not defined you can define it.
-#ifndef PI
+<b>#ifndef</b><br>
+- To check if macro is not defined. If not defined you can define it.<br>
+<pre><code>#ifndef PI
 #define PI 3.14
 #endif
+</code></pre>
 
-#if, #else, #elif, #endif
-- Used for conditional compilation for macros.
-#define VALUE 5
+<b>#if, #else, #elif, #endif</b><br>
+- Used for conditional compilation for macros.<br>
+<pre><code>#define VALUE 5
 
 #if VALUE == 5
   printf("The value is 5\n");
@@ -110,3 +123,4 @@ Learned about:
 #else 
   printf("Value is something else.");
 #endif // Closes all blocks like #if, #ifdef, #ifndef.
+</code></pre>

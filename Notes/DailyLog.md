@@ -35,7 +35,7 @@ else
   printf("This pointer is NULL.");
 
 #Day - 2        -  Learned about Dangling Pointer & Wild Pointer.   
-(5/7/2025)
+(05/07/2025)
 
 ==========================================================================================
 
@@ -58,3 +58,55 @@ int a = 24;
 int *ptr;
 
 printf("%d", *ptr); // This is a Wild Pointer.
+
+#Day - 3        -  Did Matrix Multiplication.
+(06/07/2025)
+
+==========================================================================================
+
+
+## Matrix Multiplication  
+- Tried doing Matrix Multiplication of 2D matrix and got succeeded.  
+- Used functions and user inputs to get the size of the Matrix.
+
+## Preprocessor Directives  
+Learned about:  
+`#include`, `#define`, `#undef`, `#ifdef`, `#ifndef`, `#if`, `#else`, `#elif`, `#endif`
+
+#include 
+ - To include another file.  
+#include <stdio.h>
+#include "myfile.h"
+
+#define
+- To define a constant or macro.
+#define PI 3.14
+
+#undef
+- To undefine a macro which was defined earlier.
+#undef PI
+
+#ifdef
+- To check if macro is actually defined.
+#define DEBUG
+#ifdef DEBUG
+  printf("It is defined.");
+#endif
+
+#ifndef
+- To check if macro is not defined. If not defined you can define it.
+#ifndef PI
+#define PI 3.14
+#endif
+
+#if, #else, #elif, #endif
+- Used for conditional compilation for macros.
+#define VALUE 5
+
+#if VALUE == 5
+  printf("The value is 5\n");
+#elif VALUE == 10
+  printf("The value is 10\n");
+#else 
+  printf("Value is something else.");
+#endif // Closes all blocks like #if, #ifdef, #ifndef.

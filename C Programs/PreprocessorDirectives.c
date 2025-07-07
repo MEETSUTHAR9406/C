@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "Palindrome.c"
+#include "Palindrome.c" // Includes other files
 #define PI 3.14
 #define SQUARE(x) x * x
 // #undef PI

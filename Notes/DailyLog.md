@@ -124,3 +124,38 @@ Learned about:  <br>
   printf("Value is something else.");
 #endif // Closes all blocks like #if, #ifdef, #ifndef.
 </code></pre>
+
+
+#Day - 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
+(07/07/2025)<br><br>
+
+==========================================================================================<br><br>
+
+
+## Palindrome Numbers  <br>
+- Tried the logic of Palindrome numbers using functions.  <br>
+
+## File Input/Output <br>
+Learned about:  <br>
+<code>fopen()</code>, <code>fclose()</code>, <code>fgetc()</code>, <code>fgets()</code>
+- Tried making a bill replacing string in Pre-written file.
+
+
+#Day - 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
+(08/07/2025)<br><br>
+
+==========================================================================================<br><br>
+
+
+## File Input/Output <br>
+Learned in detail about:  <br>
+<code>fopen()</code>, <code>fclose()</code>, <code>fgetc()</code>, <code>fgets()</code>, <code>fputc()</code>, <code>fputs()</code>
+- Completed making a bill replacing string in Pre-written file.
+
+<b>fopen()</b><br>
+- To open any file either <b>Text file</b> or <b>Binary file</b>
+- There are many mods by which we can open files, <b>r, w, r+, w+ rb</b>
+
+<b>fclose</b><br>
+- After opening a file and completing task you must close the while which was opened.
+- fclose automatically closes the file which was opened earlier.

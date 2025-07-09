@@ -159,3 +159,39 @@ Learned in detail about:  <br>
 <b>fclose</b><br>
 - After opening a file and completing task you must close the while which was opened.
 - fclose automatically closes the file which was opened earlier.
+
+
+#Day - 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about File Modes in detail & Command line Arguments.<br>
+(09/07/2025)<br><br>
+
+==========================================================================================<br><br>
+
+
+<b>fgetc()</b><br>
+- To get a single character from the file.
+
+<b>fgets</b><br>
+- fgets() is almost same as fgetc() the difference is that while fgetc() was used to get a single character, fgets() is used to get string of characters.
+
+<b>fputc()</b><br>
+- To enter a single character in a file. 
+- If the file is in "w" write mode then first it cleans the file and then writes the content.
+
+<b>fputs()</b><br>
+- Same as fputc(), The main difference is that fputs() is used to pass the string of characters to file.
+- Also same here, If the file is in "w" write mode then first it cleans the file and then writes the content.
+
+## Command Line Arguments <br>
+
+## 🔢 Command Line Arguments
+
+I practiced how to use **command line arguments in C**.
+
+### Code Overview
+I created a calculator program that:
+- Accepts an **operation type** (`add`, `subtract`, `multiply`, `divide`)
+- Accepts **two numbers**
+- Performs the selected operation using `argv[]` and `atoi()`
+
+### Example Command:
+./calculator add 10 5

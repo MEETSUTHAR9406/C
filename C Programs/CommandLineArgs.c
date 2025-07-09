@@ -14,16 +14,21 @@
 
         if(strcmp(argv[1], "add") == 0) {
             printf("The addition is %d\n", num1 + num2);
+
         } else if(strcmp(argv[1], "subtract") == 0) {
             printf("The subtraction is %d\n", num1 - num2);
+
         } else if(strcmp(argv[1], "multiply") == 0) {
             printf("The multiplication is %d\n", num1 * num2);
+
         } else if(strcmp(argv[1], "divide") == 0) {
             if(num2 == 0) {
                 printf("Can't divide by zero.");
+                
             } else {
                 printf("The division is %d\n", num1 / num2);
             }
+
         } else {
             printf("Invalid operation.\n");
         }

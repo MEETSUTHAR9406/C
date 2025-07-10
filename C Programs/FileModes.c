@@ -5,7 +5,7 @@
 int main() {
 
     FILE *file_ptr = fopen("File1.txt", "w");
-    FILE *file_ptr2 = fopen("File2.txt", "w+");
+    FILE *file_ptr2 = fopen("File2.txt", "a+");
 
     if(file_ptr == NULL || file_ptr2 == NULL) {
         printf("File not found.");

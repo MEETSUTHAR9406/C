@@ -22,7 +22,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    printf("\nYour array is:\n");
+    printf("\nOriginal array is:\n");
     for(int i = 0; i < size; i++) {
         printf("\nAt index %d the element is %d", i, arr[i]);
     }
@@ -44,7 +44,7 @@ int main() {
         }
     }
 
-    printf("\nYour array is:\n");
+    printf("\nSorted array is:\n");
     for(int i = 0; i < size; i++) {
         printf("\nAt index %d the element is %d", i, arr[i]);
     }

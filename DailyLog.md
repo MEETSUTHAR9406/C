@@ -1,6 +1,6 @@
 # DailyLog is about my Learning throughout the day.<br><br>
 
-#Day - 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Void Pointer and NULL pointer.<br>
+# Day - 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Void Pointer and NULL pointer.<br>
 (04/07/2025)<br><br>
 
 ==========================================================================================<br><br>
@@ -38,7 +38,7 @@ else
 
 <br>
 
-#Day - 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Dangling Pointer & Wild Pointer.   <br>
+# Day - 2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about Dangling Pointer & Wild Pointer.   <br>
 (05/07/2025)<br><br>
 
 ==========================================================================================<br><br>
@@ -67,7 +67,7 @@ printf("%d", *ptr); // This is a Wild Pointer.
 
 <br>
 
-#Day - 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
+# Day - 3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
 (06/07/2025)<br><br>
 
 ==========================================================================================<br><br>
@@ -125,12 +125,10 @@ Learned about:  <br>
 #endif // Closes all blocks like #if, #ifdef, #ifndef.
 </code></pre>
 
-
-#Day - 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
+# Day - 4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
 (07/07/2025)<br><br>
 
 ==========================================================================================<br><br>
-
 
 ## Palindrome Numbers  <br>
 - Tried the logic of Palindrome numbers using functions.  <br>
@@ -140,58 +138,119 @@ Learned about:  <br>
 <code>fopen()</code>, <code>fclose()</code>, <code>fgetc()</code>, <code>fgets()</code>
 - Tried making a bill replacing string in Pre-written file.
 
+# Day - 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Completed Bill Generator using File I/O  
+(08/07/2025)
 
-#Day - 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Did Matrix Multiplication.<br>
-(08/07/2025)<br><br>
+==========================================================================================
 
-==========================================================================================<br><br>
+## 🗃️ File Input/Output
 
+Learned in detail about:
+`fopen()`, `fclose()`, `fgetc()`, `fgets()`, `fputc()`, `fputs()`
 
-## File Input/Output <br>
-Learned in detail about:  <br>
-<code>fopen()</code>, <code>fclose()</code>, <code>fgetc()</code>, <code>fgets()</code>, <code>fputc()</code>, <code>fputs()</code>
-- Completed making a bill replacing string in Pre-written file.
+Completed a **bill generator** by reading and replacing placeholders in a pre-written file.
 
-<b>fopen()</b><br>
-- To open any file either <b>Text file</b> or <b>Binary file</b>
-- There are many mods by which we can open files, <b>r, w, r+, w+ rb</b>
+---
 
-<b>fclose</b><br>
-- After opening a file and completing task you must close the while which was opened.
-- fclose automatically closes the file which was opened earlier.
+### `fopen()`
+- Opens any file (Text or Binary).
+- Modes include: `r`, `w`, `r+`, `w+`, `rb`, etc.
 
+### `fclose()`
+- Closes a file that was opened using `fopen()`.
+- Mandatory after file operations to prevent memory leaks.
 
-#Day - 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-  Learned about File Modes in detail & Command line Arguments.<br>
-(09/07/2025)<br><br>
+---
 
-==========================================================================================<br><br>
+# Day - 6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- File Modes Recap + Command Line Arguments  
+(09/07/2025)
 
+==========================================================================================
 
-<b>fgetc()</b><br>
-- To get a single character from the file.
+## File Functions Recap
 
-<b>fgets</b><br>
-- fgets() is almost same as fgetc() the difference is that while fgetc() was used to get a single character, fgets() is used to get string of characters.
+### `fgetc()`
+- Reads a **single character** from a file.
 
-<b>fputc()</b><br>
-- To enter a single character in a file. 
-- If the file is in "w" write mode then first it cleans the file and then writes the content.
+### `fgets()`
+- Reads a **string of characters** from a file (used for lines).
 
-<b>fputs()</b><br>
-- Same as fputc(), The main difference is that fputs() is used to pass the string of characters to file.
-- Also same here, If the file is in "w" write mode then first it cleans the file and then writes the content.
+### `fputc()`
+- Writes a **single character** to a file.
+- If in `"w"` mode, it first **clears** existing content.
 
-## Command Line Arguments <br>
+### `fputs()`
+- Writes a **string** to a file.
+- Works like `fputc()` but handles multiple characters.
 
-## 🔢 Command Line Arguments
+---
 
-I practiced how to use **command line arguments in C**.
+## Command Line Arguments in C
 
-### Code Overview
-I created a calculator program that:
-- Accepts an **operation type** (`add`, `subtract`, `multiply`, `divide`)
-- Accepts **two numbers**
-- Performs the selected operation using `argv[]` and `atoi()`
+Practiced how to handle **command line arguments** using `argc` and `argv[]`.
+
+### Program Overview
+A mini calculator that:
+- Accepts:  
+  `add`, `subtract`, `multiply`, `divide`
+- Uses:  
+  `argv[]` to access arguments  
+  `atoi()` to convert strings to integers
+
+---
 
 ### Example Command:
+```bash
 ./calculator add 10 5
+```
+# Day - 7         -  Practiced C problems & patterns.  
+(10/07/2025)
+
+==========================================================================================
+
+## C Problem Solving
+- Print N natural numbers  
+- Sum of digits of a number  
+- Reverse a number  
+- Check even or odd  
+- Check prime or not  
+- Factorial using loop  
+- Print Fibonacci series up to N  
+- Check palindrome number  
+- Print multiplication table of N  
+- Count number of digits in a number  
+- Find max of 3 numbers using if-else  
+- Simple calculator (menu-based)  
+- Patterns:
+- Check if character is vowel or consonant  
+- Sum of first N odd numbers
+
+  _Practiced locally, not yet uploaded to GitHub._
+
+
+# Day - 8         -  Started Web Development + Practiced C Array  
+(11/07/2025)
+
+==========================================================================================
+
+## Web Development  
+- Created base folder structure for `HTML`, `CSS`, and `JS`.  
+- Started learning basic HTML: tags, structure, usage.
+
+## C Practice  
+- Find second largest element in an array.  
+- Organizing files & folders (many commits due to setup work).
+
+# Day - 9         -  Continued HTML/CSS and String Exercises in C  
+(12/07/2025)
+
+==========================================================================================
+
+## Web Development  
+- Practiced basic HTML & CSS.  
+- Used tags for headings, paragraphs, images, lists, and links.
+
+## C Programming  
+- Check if string is palindrome  
+- Count vowels, consonants, digits in a string  
+

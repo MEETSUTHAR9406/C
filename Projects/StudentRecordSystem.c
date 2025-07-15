@@ -155,10 +155,6 @@ void update() {
     printf("Update Completed.\n");
 }
 
-// void delte() {
-
-// }
-
 int main() {
 
     int num;
@@ -168,7 +164,7 @@ int main() {
     
     while(1) {
         printf("\nWhat operation you want to do?\n");
-        printf("1. Add\n2. Display\n3. Search\n4. Update\n5. Delete\n6. Exit");
+        printf("1. Add\n2. Display\n3. Search\n4. Update\n5. Exit");
         printf("\nEnter your choice: ");
         scanf("%d", &choice);
         
@@ -194,12 +190,8 @@ int main() {
             case 4:
                 update();
                 break;
-    
-            // case 5:
-            //     delete();
-            //     break;
-    
-            case 6:
+
+            case 5:
                 printf("Exiting the program.");
                 exit(0);
     

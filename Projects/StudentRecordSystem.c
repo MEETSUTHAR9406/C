@@ -36,7 +36,7 @@ void add(int num, FILE *file) {
     fseek(file, 0, SEEK_END);
     long filesize = ftell(file);
     if(filesize == 0) {
-        fprintf(file, "\n%-20s\t%-10s\t%-10s\n", "Name", "Roll No", "Marks");
+        fprintf(file, "%-20s\t%-10s\t%-10s\n", "Name", "Roll No", "Marks");
     }
 
     for(int i = 0; i < num; i++) {
@@ -89,7 +89,7 @@ void search() {
         toLower(lineLower);
 
         if(strstr(lineLower, nameLower)) {
-            printf("Record found: %s", line);
+            printf("\nRecord found: %s", line);
             found = 1;
         }
     }
@@ -104,73 +104,111 @@ void search() {
 
 void update() {
 
-    FILE *file = fopen("StudenRecordSystem.txt", "a+");
+    FILE *file = fopen("StudentRecordSystem.txt", "r");
 
     if(file == NULL) {
+        printf("Cannot open file.");
+        exit(1);
+    }
+
+    FILE *temp = fopen("Temp.txt", "w");
+
+    if(temp == NULL) {
         printf("Cannot open file.");
         exit(1);
     }
 
     char word[100], replace[100];
+    char line[100];
 
-    puts("Enter the word to find: ");
+    printf("Enter the word to find: ");
+    getchar();
     fgets(word, sizeof(word), stdin);
+    word[strcspn(word, "\n")] = '\0';
 
-    word[strlen(word) - 1] = word[strlen(word)];
-
-    puts("Enter the words to replace it with: ");
+    printf("Enter the words to replace it with: ");
+    getchar();
     fgets(replace, sizeof(replace), stdin);
+    replace[strcspn(replace, "\n")] = '\0';
 
-    replace[strlen(replace) - 1] = replace[strlen(replace)];
+    while(fgets(line, sizeof(line), file)) {
+        char updated[2048] = "";
+        const char *cursor = line;
+        char *match;
+
+        while((match = strstr(cursor, word)) != NULL) {
+            strncat(updated, cursor, match - cursor);     
+            strcat(updated, replace);               
+            cursor = match + strlen(word);  
+        }
+
+        strcat(updated, cursor);
+        fputs(updated, temp);
+    }
 
     fclose(file);
+    fclose(temp);
+
+    remove("StudentRecordSystem.txt");
+    rename("Temp.txt" ,"StudentRecordSystem.txt");
+
+    printf("Update Completed.\n");
 }
+
+// void delte() {
+
+// }
 
 int main() {
 
     int num;
     int choice;
-    FILE *file = fopen("StudentRecordSystem.txt", "a+");
 
-    if(file == NULL) {
-        printf("Cannot open file.");
-        exit(1);
-    }
-
-    printf("What operation you want to do?\n");
-    printf("1. Add\n2. Display\n3. Search\n4. Update\n5. Delete");
-    printf("\nEnter your choice: ");
-    scanf("%d", &choice);
+    FILE *file; 
     
-    switch(choice) {
-        case 1:
-            add(num, file);
-            break;
+    while(1) {
+        printf("\nWhat operation you want to do?\n");
+        printf("1. Add\n2. Display\n3. Search\n4. Update\n5. Delete\n6. Exit");
+        printf("\nEnter your choice: ");
+        scanf("%d", &choice);
+        
+        file = fopen("StudentRecordSystem.txt", "a+");
 
-        case 2:
-            display(num);
-            break;
-
-        case 3:
-            search();
-            break;
-
-        case 4:
-            update();
-            break;
-
-        // case 5:
-        //     delete();
-        //     break;
-
-        default:
-            printf("Operation failed.");
-            break;
+        if(file == NULL) {
+            printf("Cannot open file.");
+            exit(1);
+        }
+        switch(choice) {
+            case 1:
+                add(num, file);
+                break;
+    
+            case 2:
+                display(num);
+                break;
+    
+            case 3:
+                search();
+                break;
+    
+            case 4:
+                update();
+                break;
+    
+            // case 5:
+            //     delete();
+            //     break;
+    
+            case 6:
+                printf("Exiting the program.");
+                exit(0);
+    
+            default:
+                printf("Invalid choice. Try again.\n");
+                break;
+        }
+        fclose(file);
     }
-
-    printf("\n");
-
-    fclose(file);
 
     return 0;
 }

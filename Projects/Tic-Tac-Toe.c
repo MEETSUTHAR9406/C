@@ -6,7 +6,7 @@
 #define X 1
 #define O 2
 
-int initializeBoard(int arr[3][3]) {
+void initializeBoard(int arr[3][3]) {
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < 3; j++) {
             arr[i][j] = 0;
@@ -88,8 +88,8 @@ void exitGame() {
     char choice;
 
     printf("Do you want to play again? (Y/N): ");
-    while (getchar() != '\n');
     scanf(" %c", &choice);
+    while (getchar() != '\n');
 
     if(choice == 'N' || choice == 'n') {
         printf("Thanks for playing!\n");
@@ -113,8 +113,8 @@ int main () {
         initializeBoard(arr);
         winner = 0;
 
-        int c;
-        while ((c = getchar() != '\n' && c != EOF));
+        // int c;
+        // while ((c = getchar()) != '\n' && c != EOF);
 
         printf("Enter your name: ");
         fgets(name, sizeof(name), stdin);

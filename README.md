@@ -12,5 +12,7 @@ Here's a quick update on my progress so far:
 - Pointers (Void, NULL, Dangling, Wild)
 - Dynamic Memory Allocation
 
+### Reviewed some programs for better grasp.
+
 ### Suggestions??
 Email here - meetsuthar9406@gmail.com

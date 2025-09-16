@@ -10,4 +10,4 @@ int main() {
     printf("Size of the array is %d", size);
 
     return 0;
-}
+}   

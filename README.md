@@ -1,4 +1,4 @@
-# My Daily Practice Repo
+# My Daily C Practice Repo (~Completed)
 
 Hi there! I'm Meet and this is my daily C programming practice repo.  
 Here's a quick update on my progress so far:
@@ -12,5 +12,7 @@ Here's a quick update on my progress so far:
 - Pointers (Void, NULL, Dangling, Wild)
 - Dynamic Memory Allocation
 
+### Reviewed some programs for better grasp.
+
 ### Suggestions??
-Email here - meet22240@gmail.com
+Email here - meetsuthar9406@gmail.com

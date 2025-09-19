@@ -8,15 +8,15 @@ int main() {
     scanf("%d %d", &num1, &num2);
 
     int min = (num1 < num2) ? num1 : num2;
-    int gcd = 1;
+    int GCD = 1;
 
     for(int i = 1; i <= min; i++) {
         if(num1 % i == 0 && num2 % i == 0) {
-            gcd = i;
+            GCD = i;
         }
     }
 
-    printf("Greatest Common Divisor (GCD) of %d and %d is %d", num1, num2, gcd);
+    printf("GCD (Greatest Common Divisor) of %d and %d is %d", num1, num2, GCD);
 
     return 0;
 }
